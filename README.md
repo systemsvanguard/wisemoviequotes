@@ -51,4 +51,6 @@ This project is licensed under the terms of the **MIT** license.
 
 ![Inspirational Movie Quotes App ~ Screen 06](http://ryanhunter.ca/images/portfolio/wisemoviequotes06.png)
 
+![Inspirational Movie Quotes App ~ Screen 07](http://ryanhunter.ca/images/portfolio/wisemoviequotes07.png)
+
 
