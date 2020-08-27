@@ -5,7 +5,7 @@ Live **Site Demo** ~ [Inspirational Movie Quotes App](http://wisemoviequotes.rya
 
 ![Inspirational Movie Quotes App](http://ryanhunter.ca/images/portfolio/wisemoviequotes01.png)
 
-### Related *BUT* seperate React.js projects 
+### Related *BUT* separate React.js projects 
 - **Movie Quest - Movie Search** [project](https://github.com/systemsvanguard/moviequest)  at https://github.com/systemsvanguard/moviequest .
 - **Fun Flicks Movie App** [project](https://github.com/systemsvanguard/funflicks) at https://github.com/systemsvanguard/funflicks .
 
