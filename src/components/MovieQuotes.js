@@ -2,40 +2,35 @@
 import React from "react";
 
 class MovieQuotes extends React.Component {
-  //
   render() {
     const randomColor = this.props.displayColor();
-    const html2 = document.documentElement;
-    html2.style.backgroundColor = randomColor;
 
     return (
-      <div className="has-text-centered">
-        <div style={{ backgroundColor: "#f8f8ff" }} className="quotebox"  >
-          <div class="columns">
-            <div class="column">
-              <div className="fadeIn" style={{ color: randomColor, borderColor: randomColor }} key={Math.random() } >
-              <h1 id="quote">"{this.props.quote}"</h1>
-              </div>
-            </div>
-            <div class="column">
-            <h5 id="author">~ {this.props.author ? this.props.author : "Unknown"  } | <a target="_blank" rel="noreferrer noopener" href={this.props.wiki}>{this.props.movie}</a>  </h5>
-
-            <h5 id="author">
+      <div className="box has-text-centered has-background-white-ter is-rounded my-2">
+        <div class="columns">
+          <div class="column is-two-fifths is-vcentered">
+            <h3 className="is-size-4 quoteStyle"  style={{ color: randomColor, borderColor: randomColor }} key={Math.random() } >{this.props.quote}</h3>
+            <h4 className="is-size-5 authorStyle"  style={{ color: randomColor, borderColor: randomColor }} key={Math.random() } >~ {this.props.author ? this.props.author : "Unknown"  } | <a target="_blank" rel="noreferrer noopener" href={this.props.wiki}>{this.props.movie}</a>  </h4>
+          </div>
+          <div class="column">
+            <p>
               <a target="_blank" rel="noreferrer noopener" href={this.props.wiki}>
-              <img src={"/images/movies/" + this.props.moviepic} alt={this.props.movie} className="movieImage" />
-              {/* <img src="ferris_bueller.jpg"  alt={this.props.movie} className="movieImage" /> */}
+                <img src={"/images/movies/" + this.props.moviepic} alt={this.props.movie} className="movieImage" />
               </a>
-            </h5>
+              <h3 className="movieName is-size-4" style={{ color: randomColor, borderColor: randomColor }} key={Math.random() }>
+                {this.props.movie}
+              </h3>
+            </p>
+
 
             <button
-            className="button is-medium is-rounded has-text-white-bis"
+            className="button is-medium is-rounded has-text-white-bis mt-3"
             style={{ backgroundColor: randomColor }}
             id="newquote" onClick={this.props.handleClick}
             >
               <span className="icon is-small"><i className="fas fa-redo"></i></span>
               <span>New Quote</span>
             </button>
-            </div>
           </div>
         </div>
       </div>
